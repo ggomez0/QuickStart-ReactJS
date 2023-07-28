@@ -4,11 +4,15 @@ export default {
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
     "./src/*.{js,ts,jsx,tsx}",
-    "./src/components/**/*.jsx",
+    "./src/components/Inicio/*.jsx",
+    "./src/*.css",
+    "node_modules/flowbite-react/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
     extend: {},
   },
-  plugins: [],
+  plugins: [
+    require('flowbite/plugin')
+  ],
 }
 
