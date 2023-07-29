@@ -1,4 +1,3 @@
-import styles from "./Signup.module.css"
 import { useState } from "react"
 import { Link, useNavigate } from "react-router-dom"
 import { createUserWithEmailAndPassword, updateProfile, getAuth } from "firebase/auth"
@@ -43,9 +42,9 @@ export function Signup(){
     }
 
     return(
-    <div className={styles.container}>
-        <div className={styles.innerbox}>
-            <h1 className={styles.heading}>Registro</h1>
+    <div className="flex  " >
+        <div >
+            <h1 >Registro</h1>
             <InputControl label="Nombre" placeholder="Nombre" 
             onChange={(event)=>setvalues((prev) => ({...prev, name:event.target.value}))}/>
 
@@ -55,8 +54,8 @@ export function Signup(){
             <InputPass label="Password" placeholder="Contraseña"
             onChange={(event)=>setvalues((prev) => ({...prev, pass:event.target.value}))}/>
 
-            <div className={styles.footer}>
-                <b className={styles.error}>{errorMsg}</b>
+            <div >
+                <b >{errorMsg}</b>
                 <button onClick={registro} disabled={submitButtonDisabled}>Registrarse</button>
                 
                 <p>

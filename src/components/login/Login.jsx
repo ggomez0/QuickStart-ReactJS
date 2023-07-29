@@ -1,4 +1,3 @@
-import styles from "./Login.module.css"
 import { InputControl, InputPass } from "../InputControl/InputControl"
 import { Link,useNavigate } from "react-router-dom"
 import {FirebaseApp} from "../../firebase"
@@ -34,9 +33,9 @@ export function Login(){
     }
 
     return(
-        <div className={styles.container}>
-            <div className={styles.innerbox}>
-                <h1 className={styles.heading}>Login</h1>
+        <div >
+            <div >
+                <h1 >Login</h1>
 
                 <InputControl label="Email" onChange={(event)=>setvalues((prev) => 
                     ({...prev, email:event.target.value}))}/>
@@ -44,8 +43,8 @@ export function Login(){
                 <InputPass label="Contraseña" onChange={(event)=>setvalues((prev) => 
                     ({...prev, pass:event.target.value}))}/>
 
-                <div className={styles.footer}>
-                    <b className={styles.error}>{errorMsg}</b>
+                <div >
+                    <b >{errorMsg}</b>
                     <button onClick={Loguearse} disabled={submitButtonDisabled}>
                         Ingresar 
                     </button>
