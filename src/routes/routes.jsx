@@ -1,7 +1,7 @@
 import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
 import { Inicio } from "../components/Inicio/Inicio";
-import { Login } from "../components/login/login";
-import { Signup } from "../components/login/Signup";
+import { Login } from "../components/Login/Login";
+import { Signup } from "../components/Signup/Signup";
 
 export function MyRoutes(){
 
