@@ -4,8 +4,8 @@ export function NavBar() {
 <nav class="">
     <div class="flex flex-wrap items-center justify-between max-w-screen-xl mx-auto p-4">
         <a href="https://flowbite.com" class="flex items-center">
-            <img src="" class="h-8 mr-3" alt="Flowbite Logo" />
-            <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Flowbite</span>
+            <img src="./src/assets/bnb.png" class="h-8 mr-3" alt="Flowbite Logo" />
+            <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">TITULO</span>
         </a>
         <div class="flex items-center md:order-2">
             <a href="#" class="text-gray-800 dark:text-white hover:bg-gray-50 focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-4 py-2 md:px-5 md:py-2.5 mr-1 md:mr-2 dark:hover:bg-gray-700 focus:outline-none dark:focus:ring-gray-800">Login</a>
