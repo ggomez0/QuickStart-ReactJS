@@ -11,8 +11,8 @@ export default {
   theme: {
     extend: {},
   },
-   plugins: [
-  //   require('flowbite/plugin'),
+  plugins: [
+    //   require('flowbite/plugin'),
     require("daisyui"),
   ],
 
@@ -26,5 +26,4 @@ export default {
     prefix: "", // prefix for daisyUI classnames (components, modifiers and responsive class names. Not colors)
     logs: true, // Shows info about daisyUI version and used config in the console when building your CSS
   },
-}
-
+};

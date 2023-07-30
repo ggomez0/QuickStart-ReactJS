@@ -2,10 +2,9 @@ import React from "react";
 import { useEffect, useState } from "react";
 import { getAuth, onAuthStateChanged } from "firebase/auth";
 import { getFirestore, doc, getDoc } from "firebase/firestore";
-import {AdminView} from "../Admin/AdminView"
-import { UserView } from "../User/UserView"
+import { AdminView } from "../Admin/AdminView";
+import { UserView } from "../User/UserView";
 import { FirebaseApp } from "../../firebase";
-
 
 const firestore = getFirestore(FirebaseApp);
 const auth = getAuth(FirebaseApp);
@@ -52,13 +51,11 @@ export function Home() {
   }
 
   if (loading) {
-    return(<div></div>);
+    return <div></div>;
   }
 
   return (
-    <div>
-      {user && user.rol === "admin" ? <AdminView /> : <UserView />}
-    </div>
+    <div>{user && user.rol === "admin" ? <AdminView /> : <UserView />}</div>
   );
 }
 

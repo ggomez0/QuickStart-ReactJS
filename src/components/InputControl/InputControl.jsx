@@ -1,19 +1,19 @@
-import styles from "./InputControl.module.css"
+import styles from "./InputControl.module.css";
 
-export function InputControl(props){
-    return(
+export function InputControl(props) {
+  return (
     <div className={styles.container}>
-        {props.label && <label>{props.label}</label>}
-        <input type="text" {...props}></input>
-
-    </div>)
+      {props.label && <label>{props.label}</label>}
+      <input type="text" {...props}></input>
+    </div>
+  );
 }
 
 export function InputPass(props) {
-    return(
+  return (
     <div className={styles.container}>
-        {props.label && <label>{props.label}</label>}
-        <input type="password" {...props}></input>
-
-    </div>)
+      {props.label && <label>{props.label}</label>}
+      <input type="password" {...props}></input>
+    </div>
+  );
 }
