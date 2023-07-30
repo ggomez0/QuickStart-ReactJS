@@ -1,6 +1,6 @@
 import { InputControl, InputPass } from "../InputControl/InputControl";
 import { Link, useNavigate } from "react-router-dom";
-import { FirebaseApp } from "../../firebase";
+import FirebaseApp from "../../firebase";
 import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
 import { getFirestore, doc, collection, setDoc } from "firebase/firestore";
 import React, { useState } from "react";
@@ -33,7 +33,7 @@ export function Login() {
   };
 
   return (
-    <div className="max-w-xs">
+    <div className="max-w-xs pt-16">
       <div>
         <h1 className="text-white">Ingresar</h1>
 

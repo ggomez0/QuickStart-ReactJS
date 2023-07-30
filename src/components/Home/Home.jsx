@@ -4,7 +4,7 @@ import { getAuth, onAuthStateChanged } from "firebase/auth";
 import { getFirestore, doc, getDoc } from "firebase/firestore";
 import { AdminView } from "../Admin/AdminView";
 import { UserView } from "../User/UserView";
-import { FirebaseApp } from "../../firebase";
+import  FirebaseApp from "../../firebase";
 
 const firestore = getFirestore(FirebaseApp);
 const auth = getAuth(FirebaseApp);
@@ -51,7 +51,7 @@ export function Home() {
   }
 
   if (loading) {
-    return <div></div>;
+    return <span className="loading loading-infinity loading-lg"></span>;
   }
 
   return (

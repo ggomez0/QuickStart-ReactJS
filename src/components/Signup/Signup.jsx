@@ -6,7 +6,7 @@ import {
   getAuth,
 } from "firebase/auth";
 import { InputControl, InputPass } from "../InputControl/InputControl";
-import { FirebaseApp } from "../../firebase";
+import FirebaseApp from "../../firebase";
 import { getFirestore, doc, collection, setDoc } from "firebase/firestore";
 
 export function Signup() {
