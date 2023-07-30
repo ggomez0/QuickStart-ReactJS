@@ -1,9 +1,11 @@
 import React from "react";
+import Inicio from "../Inicio/Inicio";
 
 export function AdminView() {
   return (
     <div>
       <h1>Esta pagina es ADMIN</h1>
+      <Inicio></Inicio>
     </div>
   );
 }

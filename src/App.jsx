@@ -2,13 +2,12 @@ import React, { useState } from "react";
 import { MyRoutes } from "./routes/routes";
 import { NavBar } from "./components/NavBar/NavBar";
 import { Footer } from "./components/footer/footer";
-import Product from "./components/Product/Product";
 
 function App() {
   return (
     <div className="mx-auto max-w-screen-xl">
       <NavBar></NavBar>
-      <Product></Product>
+      
       <MyRoutes></MyRoutes>
       <Footer></Footer>
     </div>

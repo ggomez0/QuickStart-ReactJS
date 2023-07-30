@@ -16,7 +16,7 @@ export function Product() {
 
   return (
     <div>
-      <table border="1">
+      <table className="table" border="1">
         <thead>
           <tr>
             <th>Código</th>

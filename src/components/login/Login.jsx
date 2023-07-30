@@ -33,9 +33,9 @@ export function Login() {
   };
 
   return (
-    <div>
+    <div className="max-w-xs">
       <div>
-        <h1>Login</h1>
+        <h1 className="text-white">Ingresar</h1>
 
         <InputControl
           label="Email"
@@ -53,15 +53,14 @@ export function Login() {
 
         <div>
           <b>{errorMsg}</b>
-          <button onClick={Loguearse} disabled={submitButtonDisabled}>
+          <button className="btn btn-primary mt-4" onClick={Loguearse} disabled={submitButtonDisabled}>
             Ingresar
           </button>
           <p>
             Crear cuenta
             <span>
-              <br></br>
-              <br></br>
-              <Link to="/Signup">Registrarme</Link>
+            
+              <Link className="text-white " to="/Signup">Registrarme</Link>
             </span>
           </p>
         </div>
