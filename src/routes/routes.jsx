@@ -3,7 +3,7 @@ import { Inicio } from "../components/Inicio/Inicio";
 import { Login } from "../components/Login/Login";
 import { Signup } from "../components/Signup/Signup";
 import { Home } from "../components/Home/Home";
-import {Error404} from "../components/Inicio/Error404";
+import { Error404 } from "../components/Inicio/Error404";
 
 export function MyRoutes() {
   return (

@@ -4,7 +4,7 @@ import { getAuth, onAuthStateChanged } from "firebase/auth";
 import { getFirestore, doc, getDoc } from "firebase/firestore";
 import { AdminView } from "../Admin/AdminView";
 import { UserView } from "../User/UserView";
-import  FirebaseApp from "../../firebase";
+import FirebaseApp from "../../firebase";
 
 const firestore = getFirestore(FirebaseApp);
 const auth = getAuth(FirebaseApp);
@@ -52,11 +52,12 @@ export function Home() {
 
   if (loading) {
     return (
-    <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
-      <div class="mx-auto max-w-screen-sm text-center">    
-        <span className="loading loading-infinity loading-lg"></span>
+      <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
+        <div class="mx-auto max-w-screen-sm text-center">
+          <span className="loading loading-infinity loading-lg"></span>
+        </div>
       </div>
-      </div>);
+    );
   }
 
   return (

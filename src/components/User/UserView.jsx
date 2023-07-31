@@ -3,7 +3,7 @@ import Inicio from "../Inicio/Inicio";
 import Productos from "../Inicio/Productos";
 
 export function UserView() {
-  return (<Productos></Productos>);
+  return <Productos></Productos>;
 }
 
 export default UserView;

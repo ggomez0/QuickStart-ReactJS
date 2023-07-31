@@ -1,10 +1,9 @@
-import React, { useState, useEffect } from 'react';
-import  {auth}  from './firebase';
+import React, { useState, useEffect } from "react";
+import { auth } from "./firebase";
 import { MyRoutes } from "./routes/routes";
 import { NavBar } from "./components/NavBar/NavBar";
 import { Footer } from "./components/footer/footer";
 import NavBarAuth from "./components/NavBar/NavBarAuth";
-
 
 export function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -25,10 +24,9 @@ export function App() {
     return () => unsubscribe();
   }, []);
 
-
   return (
     <div className="mx-auto max-w-screen-xl">
-      {isLoggedIn ? (<NavBarAuth />) : (<NavBar />)}      
+      {isLoggedIn ? <NavBarAuth /> : <NavBar />}
       <MyRoutes />
       <Footer />
     </div>
