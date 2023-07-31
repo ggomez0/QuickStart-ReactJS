@@ -1,6 +1,7 @@
 import { useState } from "react";
 import  FirebaseApp  from "../../firebase";
 import { getFirestore, doc, collection, setDoc } from "firebase/firestore";
+import { Navigate } from "react-router-dom";
 
 
 export function CreateProduct() {
@@ -35,6 +36,7 @@ export function CreateProduct() {
         .then(() => {
           console.log("Data saved successfully!");
           closeModal();
+          window.location.reload(false);
         })
         .catch((error) => {
           console.error("Error saving data:", error);
