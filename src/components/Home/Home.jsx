@@ -51,7 +51,12 @@ export function Home() {
   }
 
   if (loading) {
-    return <span className="loading loading-infinity loading-lg"></span>;
+    return (
+    <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
+      <div class="mx-auto max-w-screen-sm text-center">    
+        <span className="loading loading-infinity loading-lg"></span>
+      </div>
+      </div>);
   }
 
   return (
