@@ -75,14 +75,15 @@ export function ProductsCRUD(){
                         {product.name}
                     </th>
                     <td class="px-6 py-4">
-                        {product.color}
-                    </td>
-                    <td class="px-6 py-4">
-                        {product.category}
+                    {product.category}
                     </td>
                     <td class="px-6 py-4">
                         ${product.price}
                     </td>
+                    <td class="px-6 py-4">
+                    {product.description}
+                    </td>
+                    
                     <td class="px-6 py-4">
                         <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
                     </td>
