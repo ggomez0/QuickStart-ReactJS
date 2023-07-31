@@ -4,8 +4,6 @@ import CreateProduct from "./CreateProd";
 import ProductsCRUD from "./ProductsCRUD";
 
 export function AdminView() {
-
-
   return (
     <div className="">
       <CreateProduct></CreateProduct>
