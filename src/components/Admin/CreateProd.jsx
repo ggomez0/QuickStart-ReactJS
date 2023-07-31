@@ -94,7 +94,7 @@ export function CreateProduct() {
                     for="name"
                     class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
                   >
-                    Name
+                    Nombre
                   </label>
                   <input
                     onChange={(event) =>
@@ -117,7 +117,7 @@ export function CreateProduct() {
                     for="price"
                     class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
                   >
-                    Price
+                    Precio
                   </label>
                   <input
                     onChange={(event) =>
@@ -158,12 +158,22 @@ export function CreateProduct() {
                     <option value="PH">Phones</option>
                   </select>
                 </div>
+                <div>
+                  <label
+                    for="fileinput"
+                    class=" text-sm font-medium text-gray-900 dark:text-white"
+                  >
+                    Imagen
+                  </label>
+                  <input type="file" className="file-input file-input-ghost w-full max-w-xs"/>
+
+                </div>
                 <div class="sm:col-span-2">
                   <label
                     for="description"
                     class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
                   >
-                    Description
+                    Descripción
                   </label>
                   <textarea
                     onChange={(event) =>
@@ -175,19 +185,19 @@ export function CreateProduct() {
                     id="description"
                     rows="4"
                     class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
-                    placeholder="Write product description here"
+                    placeholder="Descripción del producto"
                   ></textarea>
                 </div>
               </div>
               <button
                 type="submit"
                 onClick={handleFormSubmit}
-                className="text-white inline-flex items-center bg-primary-700
+                className="btn btn-primary text-white inline-flex items-center bg-primary-700
                hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium
                 rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700
                  dark:focus:ring-primary-800"
               >
-                Add new product
+                Agregar producto
               </button>
             </form>
           </div>
